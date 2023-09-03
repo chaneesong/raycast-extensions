@@ -10,13 +10,15 @@ const SEARCH_ALIAS: { [key: string]: string } = {
 
 export default async function Command(props: LaunchProps<{ arguments: Arguments.SearchBrowser }>) {
   const { url } = props.arguments;
-  let alias;
   if (SEARCH_ALIAS[url]) {
-    alias = SEARCH_ALIAS[url];
+    const alias = SEARCH_ALIAS[url];
+    await open(alias);
+  } else {
+    const startsWithHttps = /^https:\/\//.test(url);
+    const fullUrl = startsWithHttps ? url : `https://${url}`;
+    await open(fullUrl);
   }
-  const startsWithHttps = /^https:\/\//.test(url);
-  const fullUrl = startsWithHttps ? url : `https://${url}`;
-  await open(alias ? alias : fullUrl);
+
   await popToRoot({ clearSearchBar: true });
   await closeMainWindow({ clearRootSearch: true });
 
