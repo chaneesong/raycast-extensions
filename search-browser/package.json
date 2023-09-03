@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "search-browser",
   "title": "Search Browser",
-  "description": "Search Browser extension",
+  "description": "Search browser extension",
   "icon": "command-icon.png",
   "author": "sch102403",
   "categories": [
@@ -11,10 +11,10 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "saerch-browser",
-      "title": "Saerch Browser",
+      "name": "search-browser",
+      "title": "Search Browser",
       "subtitle": "Search Browser",
-      "description": "Search Browser",
+      "description": "Search browser extension",
       "mode": "no-view",
       "arguments": [
         {

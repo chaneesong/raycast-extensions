@@ -1,3 +1,3 @@
 # Search Browser
 
-Search Browser
+Search browser extension
