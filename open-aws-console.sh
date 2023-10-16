@@ -2,17 +2,16 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Open GITHUB
+# @raycast.title Open AWS Console
 # @raycast.mode compact
 
 # Optional parameters:
 # @raycast.icon 🤖
-# @raycast.packageName Open Browser
+# @raycast.packageName Script Commands
 
 # Documentation:
-# @raycast.description open github
+# @raycast.description open aws console
 # @raycast.author sch102403
 # @raycast.authorURL https://raycast.com/sch102403
 
-open https://github.com/chaneesong
-exit
+open https://ap-northeast-2.console.aws.amazon.com/console/home
