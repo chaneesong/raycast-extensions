@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Open GCP Console
-# @raycast.mode compact
+# @raycast.mode slient
 
 # Optional parameters:
 # @raycast.icon 🤖
